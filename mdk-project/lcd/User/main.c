@@ -56,7 +56,7 @@ int main(void)
 //	  LCD_DispStrCH(50, 50, (uint8_t *)"野火开发板", RED);
 //	  LCD_DispEnCh(5, 90, "Welcome to use 野火 ISO Stm32 开发板 bigo------", RED);
 	
-		LCD_DispStrCH(40, 5, (uint8_t *)"安馨信息科技有限公司", BLACK);  
+		LCD_DispStrCH(40, 20, (uint8_t *)"安馨信息科技有限公司", BLACK);  
 		/* 显示BMP图片 */
 //		Lcd_show_bmp(0, 0,"/wildfire.bmp");
 //		Lcd_show_bmp( 10,10,"/pic1.bmp");		
@@ -68,7 +68,7 @@ int main(void)
 			for(i=0; i<BUKA_PIC_NUM; i++)
 			{
 				sprintf(buka_pic_file, "/%d.bmp", i);
-				user_lcd_show_bmp ( 60, 160, (uint8_t *)buka_pic_file);
+				user_lcd_show_bmp ( 60, 100, (uint8_t *)buka_pic_file);
 				Delay_ms(1000/13);
 			}
 		}
